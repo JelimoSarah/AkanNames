@@ -1,0 +1,22 @@
+h1 {
+    color: mediumseagreen;
+    text-align: center;
+}
+h2 {
+    color:brown;
+    background-color: lightsalmon;
+    text-align: center;
+}
+.info {
+    float: left;
+    width: auto;
+}
+.text { 
+    border:2px seagreen;
+    padding: 6px;
+    margin: 20px;
+    background-color: aquamarine;
+}
+p {
+    background-color: rgb(250, 198, 208);
+}
