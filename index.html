@@ -1,58 +1,68 @@
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Akan Names</title>
-    <link href="C:/Users/Sarah Jelimo/Documents/moringa-school-projects/WeekTwo/styles.css" rel="stylesheet" type="text/css">
-    <script src="C:/Users/Sarah Jelimo/Documents/moringa-school-projects/WeekTwo/main.js" ></script>
-  </head>
-  <body>
-    <h1><strong>AKAN NAMES</strong> - A GHANAIN CULTURE </h1>
-      <h2>This is a page that enables one to know their Akan name, a Ghanain culture.  </h2>
-      <div class="text">
-        <p>In Ghana, children are named according to the day they were born.</p>
-        <p>Males are given certain and women likewise. For example : 
-            <ol>
-                <li>Sunday: Female - Akosua Male - Kwasi</li>
-                <li>Monday: Female - Adwoa Male - Kwadwo</li>
-            </ol>
-        </p>
-        <p>This web application  takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. </p>
-      </div>
 
-
-
-      <h3>Information Required:</h3>
-      <div class="info">
-        <p>What is your gender? Write either female or male.In small letters.</p>
-        <form id="add-form">
-            <p><label>gender <input type="text" name="gender"></label>
-              <button type="button" id="add">add gender</button></p>
-        </form>
-        <p>What is your birthdate?Write in the format of DDMMCCYY where CC stands for century and YY stands for last part of year.e.g in 09/11/1989(9th November 1989) 09 is date,11 is month, 19 is century and 89 is year.  </p>
-        <form id="add-form">
-          <p><label>birthdate <input type="number" name="date"></label>
-            <button type="button" id="add">add date(DD)</button></p>
-            <p><label>birthdate <input type="number" name="month"></label>
-                <button type="button" id="add">add month(MM)</button></p>
-                <p><label>birthdate <input type="number" name="century"></label>
-                    <button type="button" id="add">add century(CC)</button></p>
-                    <p><label>birthdate <input type="number" name="year"></label>
-                        <button type="button" id="add">add year(YY)</button></p>
-                        
-                        <form id="add-form">
-                              <button type="button" id="addAkanName">What is my Akan Name?</button>
-                        </form>
-        
-      </form>
+<head>
+  <title>Akan Names</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
   
+</head>
 
-      </div>
+<body>
+  <h1><strong>AKAN NAMES</strong> - A GHANAIN CULTURE </h1>
+  <h2>This is a page that enables one to know their Akan name, a Ghanain culture. </h2>
+  <div class="text">
+    <p>In Ghana, children are named according to the day they were born.</p>
+    <p>Males are given certain and women likewise. For example :
+    <ol>
+      <li>Sunday: Female - Akosua Male - Kwasi</li>
+      <li>Monday: Female - Adwoa Male - Kwadwo</li>
+    </ol>
+    </p>
+    <p>This web application takes a user's birthday and calculates the day of the week they were born and then depending
+      on their gender outputs their Akan Name. </p>
+  </div>
+
+
+
+  <h3>Information Required:</h3>
+  <div class="info">
+    <p>What is your gender?Pick one.</p>
+    <form id="add-form">
+      <p><label>female <input type="radio" name="gender" value="female" required ></label></p>
+      <p><label>male <input type="radio" name="gender" value="male"> </label></p>
+        <!-- <button type="button" id="add">add gender</button> -->
       
+    <!-- </form> -->
+    <p>What is your birthdate?Write in the format of DDMMCCYY where CC stands for century and YY stands for last part of
+      year.e.g in 09/11/1989(9th November 1989) 09 is date,11 is month, 19 is century and 89 is year. </p>
+    <!-- <form id="add-form"> -->
+      <p><label>date <input type="number" name="date" required max="31" min="01"></label>
+        <!-- <button type="button" id="add">add date(DD)</button> -->
+      </p>
+      <p><label>month <input type="number" name="month" required max="12" min="01"></label>
+        <!-- <button type="button" id="add">add month(MM)</button> -->
+      </p>
+      <p><label>century <input type="number" name="century" required max="20" min="00"></label>
+        <!-- <button type="button" id="add">add century(CC)</button> -->
+      </p>
+      <p><label>year <input type="number" name="year" required ></label>
+        <!-- <button type="button" id="add">add year(YY)</button> -->
+      </p>
+      <input type="submit" value="Get Akan Name" id="AkanName"> 
 
-
+    </form>
+    <div id="akanNameFinal">
       
-      
+    </div>
 
-  </body>
+
+  </div>
+
+
+
+
+
+  <script src="main.js"></script>
+</body>
+
 </html>
